@@ -13,6 +13,7 @@ const technologies = [
   "React",
   "TypeScript",
   "JavaScript",
+  "Flutter",
   "PHP",
   "MySQL",
   "Tailwind CSS",
@@ -100,7 +101,7 @@ function Hero() {
             </span>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/Choco-Alex"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
@@ -110,7 +111,7 @@ function Hero() {
             </a>
 
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/alex-brondon-kom-tagne-7352b7240"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"

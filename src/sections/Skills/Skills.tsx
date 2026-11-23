@@ -19,6 +19,7 @@ const skillGroups = [
       "HTML5",
       "CSS3",
       "JavaScript",
+      "Flutter",
       "React JS",
       "TypeScript",
       "Tailwind CSS",

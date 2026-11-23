@@ -13,6 +13,26 @@ import {
 const experiences = [
   {
     period: "Module terminé",
+    title: "HTML, CSS & JavaScript",
+    organization: "Parcours de formation en informatique",
+    description:
+      "Découverte des principes de conception des pages web, de l'architecture et du comportement des éléments interactifs.",
+    icon: Palette,
+    status: "completed",
+    topics: ["Pages Web", "Amélioration du style", "Interaction"],
+  },
+  {
+    period: "Module terminé",
+    title: "Git/Github",
+    organization: "Parcours de formation en informatique",
+    description:
+      "Découverte des principes de gestion de versions et de collaboration sur des projets de développement logiciel.",
+    icon: Palette,
+    status: "completed",
+    topics: ["Gestion de versions", "Collaboration", "Développement"],
+  },
+  {
+    period: "Module terminé",
     title: "UI/UX Design",
     organization: "Parcours de formation en informatique",
     description:
@@ -52,13 +72,13 @@ const experiences = [
     topics: ["Composants", "Hooks", "TypeScript"],
   },
   {
-    period: "À venir",
+    period: "En cours",
     title: "Réseaux informatiques",
     organization: "Parcours de formation en informatique",
     description:
       "Découverte des architectures réseaux, des protocoles et des mécanismes de communication informatique.",
     icon: Network,
-    status: "upcoming",
+    status: "ongoing",
     topics: ["Architecture réseau", "Protocoles", "Communication"],
   },
 ];

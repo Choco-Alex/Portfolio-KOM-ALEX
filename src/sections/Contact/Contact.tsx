@@ -167,7 +167,7 @@ function Contact() {
 
               <div className="flex gap-3">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/Choco-Alex"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub"
@@ -177,7 +177,7 @@ function Contact() {
                 </a>
 
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/in/alex-brondon-kom-tagne-7352b7240"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"

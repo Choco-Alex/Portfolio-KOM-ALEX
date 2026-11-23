@@ -49,7 +49,7 @@ function About() {
             <span className="text-blue-600 dark:text-blue-400">moi.</span>
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl leading-8 text-slate-600 dark:text-slate-400">
+          <p className="mx-auto mt-5 max-w-2xl leading-8 text-slate-600 dark:text-slate-700">
             Au-delà du code, une passion pour la création, l'innovation et les
             solutions numériques.
           </p>
@@ -71,7 +71,7 @@ function About() {
               </span>
             </h3>
 
-            <div className="space-y-5 text-base leading-8 text-slate-600 dark:text-slate-400">
+            <div className="space-y-5 text-base leading-8 text-slate-600 dark:text-slate-700">
               <p>
                 Je suis{" "}
                 <strong className="text-slate-900 dark:text-white">
@@ -111,7 +111,7 @@ function About() {
                   Toujours en apprentissage
                 </h4>
 
-                <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400">
+                <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-700">
                   Chaque nouveau projet est une occasion d'apprendre,
                   d'améliorer mes compétences et de repousser mes limites.
                 </p>

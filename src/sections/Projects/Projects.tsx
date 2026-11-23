@@ -1,18 +1,25 @@
 import {
   ArrowUpRight,
   Code2,
-  Database,
-  Gamepad2,
-  Monitor,
+  // Database,
+  // Gamepad2,
+  // Monitor,
   ShieldCheck,
-  Server,
+  // Server,
   Sparkles,
 } from "lucide-react";
+// import gamehubImage from "../assets/images/projects/gamehub.png";
+import gamehubImage from "../../assets/images/projects/gamehub.png";
+import scholarImage from "../../assets/images/projects/scholar.png";
+import proxserviceImage from "../../assets/images/projects/proxiimage.png";
+import sigifImage from "../../assets/images/projects/sigif.png";
+import consultingImage from "../../assets/images/projects/3mc.png";
 
 const projects = [
   {
     id: 1,
     title: "GameHub Manager",
+    image: gamehubImage,
     category: "Application Web de gestion",
     description:
       "Une plateforme de gestion et de distribution de jeux vidéo conçue pour centraliser les opérations, gérer les clients, suivre les ventes et sécuriser les transferts de fichiers.",
@@ -23,7 +30,72 @@ const projects = [
       "Transferts sécurisés SHA-256",
       "Dashboard et statistiques",
     ],
-    status: "En développement",
+    status: "developpé",
+  },
+  {
+    id: 2,
+    title: "Scholar",
+    image: scholarImage,
+    category: "Application Web de gestion d'établissements",
+    description:
+      "Une plateforme de gestion d'établissements afin de pouvoir payer les frais de scolarité des élèves et faire la gestion des élèves et enseignants.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "PHP", "MySQL"],
+    features: [
+      "Gestion des élèves",
+      "Gestion des enseignants",
+      "Paiement des frais de scolarité",
+      "Dashboard et statistiques",
+    ],
+    status: "En developpement ",
+  },
+  {
+    id: 3,
+    title: "ProxiService",
+    image: proxserviceImage,
+    category:
+      "Application Web de mise en relation Client et prestataires de services",
+    description:
+      "Une plateforme de mise en relation entre clients et prestataires de services.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "PHP", "MySQL"],
+    features: [
+      "Demande de service",
+      "Proposition et Recherche de prestataires ",
+      "Suivi du service et paiement des commissions",
+      "Dashboard et statistiques",
+    ],
+    status: "En developpement ",
+  },
+  {
+    id: 4,
+    title: "SIGIF",
+    image: sigifImage,
+    category: "Application web et mobile de gestion",
+    description:
+      "Une application ou Sytème de gestion des informations forestières.",
+    technologies: ["Flutter", "Java"],
+    features: [
+      "Gestion des informations forestières",
+      "Suivi des activités et des projets",
+      "Analyse et visualisation des données",
+      "Dashboard et statistiques",
+    ],
+    status: "En production ",
+  },
+  {
+    id: 5,
+    title: "3M Consulting",
+    image: consultingImage,
+    category: "Application web et mobile de gestion",
+    description:
+      "Une plateforme de recherche d'emploi et de recrutement pour les entreprises et les candidats.",
+    technologies: ["Flutter", "PHP", "MySQL"],
+    features: [
+      "Recherche d'emploi et de candidats",
+      "Gestion des offres et des candidatures",
+      "Suivi des entretiens et des recrutements",
+      "Dashboard et statistiques",
+    ],
+    status: "Developpé",
   },
 ];
 
@@ -45,7 +117,7 @@ function Projects() {
             <span className="text-blue-600 dark:text-blue-400">.</span>
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-400">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-700">
             Quelques réalisations et expériences qui illustrent mon approche du
             développement et ma capacité à transformer des idées en applications
             concrètes.
@@ -60,112 +132,21 @@ function Projects() {
               className="group grid overflow-hidden rounded-4xl border border-slate-200 bg-slate-50 transition duration-300 hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/5 dark:border-white/10 dark:bg-slate-950/60 lg:grid-cols-2"
             >
               {/* VISUAL PREVIEW */}
-              <div className="relative flex min-h-90 items-center justify-center overflow-hidden bg-linear-to-br from-slate-900 via-blue-950 to-violet-950 p-8 sm:p-12">
-                <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-blue-500/20 blur-[90px]" />
+              <div className="group/image relative min-h-90 overflow-hidden bg-slate-900">
+                {/* Image du projet */}
+                <img
+                  src={project.image}
+                  alt={`Aperçu de ${project.title}`}
+                  className="absolute inset-0 h-full w-full object-contain object-center transition duration-700 group-hover:scale-105"
+                />
 
-                <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-violet-500/20 blur-[90px]" />
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-slate-950/10" />
 
-                {/* MINI DASHBOARD MOCKUP */}
-                <div className="relative w-full max-w-lg rotate-2 overflow-hidden rounded-2xl border border-white/15 bg-slate-950/95 shadow-2xl transition duration-500 group-hover:rotate-0">
-                  {/* MOCKUP HEADER */}
-                  <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
-                    <div className="flex items-center gap-2">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white">
-                        <Gamepad2 size={18} />
-                      </div>
-
-                      <span className="text-sm font-bold text-white">
-                        GameHub Manager
-                      </span>
-                    </div>
-
-                    <div className="flex gap-1.5">
-                      <span className="h-2 w-2 rounded-full bg-red-400" />
-                      <span className="h-2 w-2 rounded-full bg-yellow-400" />
-                      <span className="h-2 w-2 rounded-full bg-emerald-400" />
-                    </div>
-                  </div>
-
-                  {/* MOCKUP BODY */}
-                  <div className="grid grid-cols-[65px_1fr]">
-                    {/* SIDEBAR */}
-                    <div className="space-y-5 border-r border-white/10 bg-slate-900 p-3">
-                      <div className="flex justify-center rounded-lg bg-blue-500/20 p-2 text-blue-400">
-                        <Monitor size={18} />
-                      </div>
-
-                      <div className="flex justify-center text-slate-500">
-                        <Gamepad2 size={17} />
-                      </div>
-
-                      <div className="flex justify-center text-slate-500">
-                        <Database size={17} />
-                      </div>
-
-                      <div className="flex justify-center text-slate-500">
-                        <Server size={17} />
-                      </div>
-                    </div>
-
-                    {/* DASHBOARD CONTENT */}
-                    <div className="space-y-4 p-4 sm:p-5">
-                      <div>
-                        <p className="text-[10px] text-slate-400">
-                          Tableau de bord
-                        </p>
-
-                        <p className="mt-1 text-base font-bold text-white">
-                          Vue d'ensemble
-                        </p>
-                      </div>
-
-                      <div className="grid grid-cols-2 gap-3">
-                        {[
-                          { label: "Jeux", value: "Catalogue" },
-                          { label: "Clients", value: "Gestion" },
-                          { label: "Ventes", value: "Suivi" },
-                          { label: "Paiements", value: "Contrôle" },
-                        ].map((item) => (
-                          <div
-                            key={item.label}
-                            className="rounded-xl border border-white/10 bg-white/5 p-3"
-                          >
-                            <p className="text-[10px] text-slate-400">
-                              {item.label}
-                            </p>
-                            <p className="mt-2 text-sm font-bold text-white">
-                              {item.value}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-
-                      {/* MOCKUP CHART */}
-                      <div className="rounded-xl border border-white/10 bg-white/5 p-3">
-                        <p className="mb-4 text-xs font-semibold text-slate-300">
-                          Activité commerciale
-                        </p>
-
-                        <div className="flex h-16 items-end gap-2">
-                          {[35, 55, 42, 75, 58, 90, 68, 100, 72, 85].map(
-                            (height, index) => (
-                              <div
-                                key={index}
-                                className="flex-1 rounded-t-sm bg-linear-to-t from-blue-700 to-violet-400"
-                                style={{ height: `${height}%` }}
-                              />
-                            ),
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* FLOATING LABEL */}
-                <div className="absolute bottom-5 left-5 flex items-center gap-2 rounded-full border border-white/10 bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">
+                {/* Nom du projet */}
+                <div className="absolute bottom-6 left-6 flex items-center gap-2 rounded-full border border-white/20 bg-slate-950/70 px-4 py-2 text-sm font-semibold text-white backdrop-blur-md">
                   <Sparkles size={15} className="text-blue-400" />
-                  Featured Project
+                  {project.title}
                 </div>
               </div>
 
@@ -254,7 +235,7 @@ function Projects() {
             D'autres projets arrivent...
           </h3>
 
-          <p className="mx-auto mt-3 max-w-lg text-sm leading-7 text-slate-500 dark:text-slate-400">
+          <p className="mx-auto mt-3 max-w-lg text-sm leading-7 text-slate-500 dark:text-slate-700">
             De nouvelles idées, de nouveaux défis et de nouvelles réalisations
             viendront enrichir progressivement ce portfolio.
           </p>
