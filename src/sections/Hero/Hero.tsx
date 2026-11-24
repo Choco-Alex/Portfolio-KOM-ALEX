@@ -149,11 +149,11 @@ function Hero() {
             <div className="absolute -bottom-5 -left-5 h-40 w-40 rounded-full border border-violet-500/20" />
 
             {/* PHOTO CONTAINER */}
-            <div className="relative aspect-4/5) overflow-hidden rounded-2 border border-slate-200 bg-linear-to-br from-blue-100 via-slate-100 to-violet-100 shadow-2xl shadow-blue-950/10 dark:border-white/10">
+            <div className="relative aspect-4/5) overflow-hidden border-5 border-slate-200 bg-linear-to-r from-blue-600 to-violet-600 shadow-2xl shadow-blue-950/10 dark:border-white/10 rounded-full ">
               <img
                 src={profile}
                 alt="KOM TAGNE Alex - Développeur Web & Mobile"
-                className="h-full w-full object-cover object-center"
+                className="h-full w-full object-cover object-center rounded-full"
               />
             </div>
 

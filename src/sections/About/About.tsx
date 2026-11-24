@@ -35,7 +35,7 @@ function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-white px-6 py-28 dark:bg-slate-900/50 lg:px-10"
+      className="relative overflow-hidden bg-white px-6 py-28 dark:bg-slate-900/30 lg:px-10"
     >
       <div className="mx-auto max-w-7xl">
         {/* SECTION HEADER */}
@@ -49,7 +49,7 @@ function About() {
             <span className="text-blue-600 dark:text-blue-400">moi.</span>
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl leading-8 text-slate-600 dark:text-slate-700">
+          <p className="mx-auto mt-5 max-w-2xl leading-8 text-slate-600 dark:text-black">
             Au-delà du code, une passion pour la création, l'innovation et les
             solutions numériques.
           </p>
